@@ -13,7 +13,7 @@ public class ConcurrentMapRunner {
 	 * hashtable the whole hashtable becomes locked other threads has to wait.
 	 * ConcurrentHashMap divides the entire map into regions and place separate locks in
 	 * different regions. So we get better performance as if one thread is working on
-	 * one region another thread can work on other region, no need to wait.
+	 * one region another thread can work on other region, no need to wait. Basically ConcurrentHashMap uses bucket level lock.
 	 */
 	public static void main(String[] args) {
 		
